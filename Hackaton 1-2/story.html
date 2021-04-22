@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>경복궁 홈페이지</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .sidebar {
+            float: left;
+            padding: 15%;
+        }
+        .title {
+            position: absolute; top: 12vh;
+            width: 13vw;
+            height: 18vh;
+            background: #943b58;
+            font-size: 150%;
+            color: #ffffff;
+            text-align: center;
+        }
+        .line {
+            position: absolute; top: 30vh;
+            width: 13vw;
+            height: .5vh;
+            background: #ba8b00;
+        }
+        .semiTitle{
+            position: absolute; top: 30.5vh;
+            width: 13vw;
+            height: 5vh;
+            background-image: url("semititle.JPG");
+            font-size: 110%;
+            color: #ffffff;
+        }
+        .sideList {
+            position: absolute; top: 35.5vh;
+            width: 13vw;
+            height: 85vh;
+            background: #f3f4f7;
+            color: #000000;
+        }
+        .main {
+            float: left;
+            padding-right: 10%;
+            position: absolute; left: 31%;
+        }
+        .container{
+            margin: 0 auto;
+            overflow: hidden;
+            width: 100%;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        #side>li{
+            display: inline-block;
+            border: 1px solid rgb(212, 212, 212);
+            border-radius: 17px;
+            height: 34px;
+            text-align: center;
+
+        }
+        .image {
+            border: 0;
+            vertical-align: top;
+            width: 140px;
+            height: 108px;
+            object-fit: cover;
+            float: left;
+            margin-right: 10px;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 108px;
+        }
+        ul li{
+            box-sizing: border-box;
+            border: 1px solid rgb(221, 221, 221);
+            width: 50%;
+            float: left;
+            margin-bottom: 10px;
+        }
+        li{
+            display: list-item;
+
+        }
+        .story {
+            display: block;
+            margin-block-start: 1em;
+            margin-inline-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            text-align: left;
+
+        }
+    </style>
+</head>
+<body>
+<img src="header.JPG" style="width:99vw;height:15vh">
+<div class="sidebar">
+    <div class="title">
+        <p style="margin-top: 20%">궁궐·종묘</p>
+    </div>
+    <div class="line"></div>
+    <div class="semiTitle">
+        <p style="margin-top: 3%;margin-left: 8%">경복궁</p>
+    </div>
+    <div class = "sideList">
+        <p style="margin-left: 12%;" onclick="location.href='index.html'">경복궁 소개</p>
+        <p style="margin-left: 12%;" onclick="location.href='guidance.html'">경복궁 관람안내</p>
+        <p style="margin-left: 12%; color:#943b58">경복궁 이야기</p>
+    </div>
+</div>
+<div class="main">
+    <h1>경복궁 이야기</h1>
+    <hr>
+    <hr width="50px" align="left" color="navy" size="2px">
+    <h3 style="margin-top: 0">경복궁 이야기</h3>
+    <hr align="left" color="navy" size="2px">
+    <div class="container">
+        <div>
+            <ul>
+                <li id="stories">
+                    <div class="storyimg"><img class = "image" src="광화문.jpg"></div>
+                    <div class="story">
+                        <p><strong>광화문</strong></p>
+                        <p>
+                            이곳은 경복궁의 남문, 광화문입니다. 요즘은 광화문 앞 세종로 양쪽으로 정부청사 건물들이 죽 늘어서 있지요?…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="건춘문.jpg"></div>
+                    <div class="story">
+                        <p><strong>건춘문</strong></p>
+                        <p>
+                            이곳 건춘문은 경복궁의 동문입니다. '봄이 시작되는 문'이라는 뜻이지요. 이곳은 세자를 비롯한 왕실 가족과 종…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="영추문.jpg"></div>
+                    <div class="story">
+                        <p><strong>영추문</strong></p>
+                        <p>
+                            이곳 영추문은 경복궁의 서쪽 대문입니다. 경복궁 안에 있는 관청에서 근무하는 문무백관들은 주로 이 영추문으로…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="신무문.jpg"></div>
+                    <div class="story">
+                        <p><strong>신무문</strong></p>
+                        <p>
+                            이곳은 신무문입니다. 경복궁의 북문이지요. 북쪽은 겨울과 죽음, 그리고 강한 음기를 상징합니다. 그래서 경복…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="동십자각.jpg"></div>
+                    <div class="story">
+                        <p><strong>동십자각</strong></p>
+                        <p>
+                            동십자각은 외로운 건물입니다. 이 건물은 높은 망루처럼 생겼는데 이상한 점은 이 건물로 들어갈 문이 없습니다…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="흥례문.jpg"></div>
+                    <div class="story">
+                        <p><strong>흥례문</strong></p>
+                        <p>
+                            자, 지금 도착하신 곳은 흥례문입니다. 흥례문 앞에서는 궁을 지키는 수문장들이 임무를 교대하는 의식을 했지요…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="영제교.jpg"></div>
+                    <div class="story">
+                        <p><strong>영제교</strong></p>
+                        <p>
+                            흥례문에 들어서면 돌을 깐 길이 3개로 나뉘어 있지요? 약간 도드라진 가운데 길은 임금님만이 지나갈 수 있었…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="기별청.jpg"></div>
+                    <div class="story">
+                        <p><strong>기별청</strong></p>
+                        <p>
+                            기별청은 궁궐 내의 우체국같은 곳이랍니다. 기별청은 유화문 옆에 딸린 작은 꼬마같은 모습이네요. 유화문은 원…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="근정문.jpg"></div>
+                    <div class="story">
+                        <p><strong>근정문</strong></p>
+                        <p>
+                            이곳은 근정전으로 향하는 근정문입니다. 이 문 앞에 있는 계단을 주목해 주세요.  답도입니다. 임금님의 길이…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="근정전 조정.jpg"></div>
+                    <div class="story">
+                        <p><strong>근정전 조정</strong></p>
+                        <p>
+                            자! 드디어 근정전에 들어오셨습니다! 근정전 앞 넓은 마당을 ‘조정’이라 부르는데, 여기에서 임금님의 즉위식…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="근정전.jpg"></div>
+                    <div class="story">
+                        <p><strong>근정전</strong></p>
+                        <p>
+                            이곳이 경복궁의 중심인 근정전입니다. 근정전 앞에 두 개의 기단이 보이는데, 이것을 ‘월대’라고 합니다. 이…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="근정전 내부.jpg"></div>
+                    <div class="story">
+                        <p><strong>근정전 내부</strong></p>
+                        <p>
+                            자, 이제 조선 권력의 최고점인 근정전 내부를 구경해 보시지요. 밖에서 보면 근정전은 2층으로 보입니다. 그…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="사정전.jpg"></div>
+                    <div class="story">
+                        <p><strong>사정전</strong></p>
+                        <p>
+                            이곳은 임금님이 정사를 보시던 사정전입니다. 조선의 정치는 매일 아침 이 곳 사정전에서 시작됩니다. 이곳에서…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="강녕전.jpg"></div>
+                    <div class="story">
+                        <p><strong>강년전</strong></p>
+                        <p>
+                            이곳은 임금의 처소, 강녕전입니다. 사정전이 나랏일을 돌보는 일터라면 강녕전은 편안하게 쉬시는 곳이죠. 왕비…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="교태전.jpg"></div>
+                    <div class="story">
+                        <p><strong>교태전</strong></p>
+                        <p>
+                            이곳은 조선 왕비의 공간인 교태전입니다. 교태란 ‘음’과 ‘양‘의 조화를 뜻하지요. 조선의 왕비는 국모였습니…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="아미산.jpg"></div>
+                    <div class="story">
+                        <p><strong>아미산</strong></p>
+                        <p>
+                            경복궁하면 경회루를 빼 놓을 수 없죠. 경복궁 창건 당시 서쪽 습지를 파 연못을 만들고 지은 누각인데, 그 …
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="흠경각.jpg"></div>
+                    <div class="story">
+                        <p><strong>흠경각</strong></p>
+                        <p>
+                            이곳은 흠경각입니다. 하늘을 공경하고 백성들에게 때를 알려 준다는 뜻이지요. 조선은 농업국가였습니다. 정확한…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="함원전.jpg"></div>
+                    <div class="story">
+                        <p><strong>함원전</strong></p>
+                        <p>
+                            왕비의 거처인 교태전에서 경회루 방향으로 협문을 나서면 함원전이 나타납니다. 함원전은 세종 때 불상을 모셔두…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="자경전.jpg"></div>
+                    <div class="story">
+                        <p><strong>자경전</strong></p>
+                        <p>
+                            이곳은 자경전입니다. 임금의 어머니를 위한 공간이지요. 자경은 ‘어머니에게 경사가 있기를’이라는 뜻입니다. …
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="십장생 굴뚝.jpg"></div>
+                    <div class="story">
+                        <p><strong>십장생 굴뚝</strong></p>
+                        <p>
+                            자경전은 궁궐의 최고 어르신인 대비께서 거처하시는 곳입니다. 그래서 대비께서 오래 사시라는 갸륵한 바람을 주…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="꽃담.jpg"></div>
+                    <div class="story">
+                        <p><strong>꽃담</strong></p>
+                        <p>
+                            자, 여기부터는 왕실의 최고어른인 대비마마의 처소, 자경전입니다. 왕비 처소인 교태전의 담만큼이나 화려하고 …
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="동궁전.jpg"></div>
+                    <div class="story">
+                        <p><strong>동궁전</strong></p>
+                        <p>
+                            이곳은 동궁 영역입니다. 음양오행에서 동쪽은 봄을 뜻하지요. 봄은 만물이 소생하는 희망찬 계절인 만큼 미래의…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="경회루.jpg"></div>
+                    <div class="story">
+                        <p><strong>경회루</strong></p>
+                        <p>
+                            이곳은 경회루입니다. 조선의 누각 중에서 가장 큰 곳이죠. 경회루는 과거에는 훨씬 화려했다고 합니다. 돌기둥…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="향원정.jpg"></div>
+                    <div class="story">
+                        <p><strong>향원전</strong></p>
+                        <p>
+                            보이는 이 연못이 향원지입니다. 향원지 한가운데 있는 정자가 향원정입니다.  이곳은 고종임금이 특히 좋아한 …
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="태원전.jpg"></div>
+                    <div class="story">
+                        <p><strong>태원전</strong></p>
+                        <p>
+                            이곳은 태원전입니다. 태원전은 임금의 초상화, 즉 어진을 모셔놓던 곳입니다. 태조와 세조, 원종, 숙종, 영…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="건청궁.jpg"></div>
+                    <div class="story">
+                        <p><strong>건청궁</strong></p>
+                        <p>
+                            이곳은 경복궁에서 가장 깊숙한 곳에 자리 잡은 건청궁입니다. 다른 전각과 약간 달리 보이시나요? 네. 건청궁…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="집옥재.jpg"></div>
+                    <div class="story">
+                        <p><strong>집옥재</strong></p>
+                        <p>
+                            이곳은 집옥재 일원입니다. 집옥재는 ‘보물을 모아 놓은 곳’이란 뜻을 가진 건물입니다. 이 곳에는 4만여권에…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="수정전.jpg"></div>
+                    <div class="story">
+                        <p><strong>수정전</strong></p>
+                        <p>
+                            이곳은 수정전입니다. 세종임금님 시대 집현전이 있었던 자리지요. 세종임금님이 한글을 창제하신 후 실용화할 수…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="궐내각사터.jpg"></div>
+                    <div class="story">
+                        <p><strong>궐내각사 터</strong></p>
+                        <p>
+                            수정전과 영추문 사이에는 넓은 잔디밭이 있습니다. 이곳은 조선시대 궐내각사가 있던 곳입니다. 궐내각사는 임금…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="고종즉위.jpg"></div>
+                    <div class="story">
+                        <p><strong>고종즉위40년 칭경비</strong></p>
+                        <p>
+                            조선 제26대 고종(재위 1863∼1907)의 즉위 40주년이 되는 1902년 나이 51세로 기로소(耆老所)…
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyimg"><img class = "image" src="소주방.jpg"></div>
+                    <div class="story">
+                        <p><strong>소주방</strong></p>
+                        <p>
+                            “오나라 오나라 아주 오나~”이 노래 기억하시나요? 드라마 '대장금'의 주제가였죠?  '대장금'의 중요한 무…
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>경복궁 홈페이지</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .sidebar {
+            float: left;
+            padding: 15%;
+        }
+        .title {
+            position: absolute; top: 12vh;
+            width: 13vw;
+            height: 18vh;
+            background: #943b58;
+            font-size: 150%;
+            color: #ffffff;
+            text-align: center;
+        }
+        .line {
+            position: absolute; top: 30vh;
+            width: 13vw;
+            height: .5vh;
+            background: #ba8b00;
+        }
+        .semiTitle{
+            position: absolute; top: 30.5vh;
+            width: 13vw;
+            height: 5vh;
+            background-image: url("semititle.JPG");
+            font-size: 110%;
+            color: #ffffff;
+        }
+        .sideList {
+            position: absolute; top: 35.5vh;
+            width: 13vw;
+            height: 85vh;
+            background: #f3f4f7;
+            color: #000000;
+        }
+        .main {
+            float: left;
+            padding-right: 10%;
+            position: absolute; left: 31%;
+        }
+        #menubar {
+            width: 850px;
+            height: 50px;
+
+        }
+        #menubar ul li {
+            list-style: none;
+            color: black;
+            background-color: #f3f4f7;
+            float: left;
+            line-height: 6vh;
+            vertical-align: middle;
+            text-align: center;
+        }
+        #menubar .selectMenu {
+            text-decoration:none;
+            color: white;
+            display: block;
+            width: 10vw;
+            background: dimgray;
+            font-size: 90%;
+        }
+        #menubar .semiMenu {
+            text-decoration:none;
+            color: black;
+            display: block;
+            width: 10vw;
+            font-size: 90%;
+        }
+        #menubar .semiMenu:hover {
+            background: dimgray;
+            color: white;
+        }
+        .container{
+            margin: 0 auto;
+            overflow: hidden;
+            width: 1348px;
+        }
+    </style>
+</head>
+<body>
+<img src="header.JPG" style="width:99vw;height:15vh">
+<div class="sidebar">
+    <div class="title">
+        <p style="margin-top: 20%">궁궐·종묘</p>
+    </div>
+    <div class="line"></div>
+    <div class="semiTitle">
+        <p style="margin-top: 3%;margin-left: 8%">경복궁</p>
+    </div>
+    <div class = "sideList">
+        <p style="margin-left: 12%;" onclick="location.href='index.html'">경복궁 소개</p>
+        <p style="margin-left: 12%; color:#943b58">경복궁 관람안내</p>
+        <p style="margin-left: 12%" onclick="location.href='story.html'">경복궁 이야기</p>
+    </div>
+</div>
+<div class="main">
+    <h1>경복궁 관람안내</h1>
+    <hr>
+    <div id="menubar">
+        <ul>
+            <li><a class="semiMenu" href="guidance.html">경복궁 시간 및 요금</a></li>
+            <li><a class="semiMenu" href="guidance-rule.html">경복궁 관람 규칙</a></li>
+            <li><a class="selectMenu">경복궁 편의시설</a></li>
+            <li><a class="semiMenu" href="guidance-way.html">경복궁 찾아오시는길</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        <hr width="4%" align="left" color="navy" size="2px">
+        <h3 style="margin-top: 0">편의시설</h3>
+        </div>
+        <img src="http://www.cha.go.kr/images/etc/guide_map_170519.png" width="60%" height="70%">
+    </div>
+</div>
+</body>
+</html>
