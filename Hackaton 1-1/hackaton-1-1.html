@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>McDonald</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            position: relative; width: 450px; height: 800px;
+            background: #19692c;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.1rem;
+            color: white;
+            text-align: center;
+        }
+        .start-btn {
+            background-color: #FFC72C;
+            border-radius: 5px;
+            border: 1px solid #FFC72C;
+            margin-top: 10px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size:1rem;
+            font-weight: bold;
+            padding: .2rem 1.5rem;
+            height: 40px;
+            width: 30%;
+        }
+        .no-start-btn {
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #ffffff;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size:.9rem;
+            font-weight: bold;
+            font-stretch: ultra-condensed;
+            padding: .2rem 1.5rem;
+            height: 40px;
+            width: 30%;
+        }
+        .message {
+            font-family: 'Nanum Brush Script', cursive;
+            font-size: 1.2rem;
+        }
+        .desk {
+            position: absolute; left: 0; bottom: 0; width: 450px; height: 80px;
+            background-color: #ffdf7e;
+            margin-bottom:0;
+        }
+        .hamburger {
+            float: left;
+            position: absolute; left: 20px; bottom: 30px; width: 100px;height:150px;
+        }
+        .potato {
+            float: left;
+            position: absolute; right: 10px; bottom: 30px; width: 80px;height:120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <img src="logo.png" style="width:50px;height:50px;margin-top:15%">
+        <p>고객님!</p>
+        <p>현재 주문량이 많아</p>
+        <p>대기 시간이 길어지고 있습니다.</p>
+        <br>
+        <p>힘들어하는 크루를 도와</p>
+        <p>고객님의 햄버거를</p>
+        <p>함께 만들어 주시겠어요?</p>
+
+        <button class="start-btn" onclick="location.href='hackaton-1-2.html'">게임 시작</button><br>
+        <button class="no-start-btn">다음에 할게요</button>
+        <br>
+        <div class="message">
+            <p class="message">도와주시는 고객님께</p>
+            <p class="message">깜짝 선물이 준비되어있어요!</p>
+        </div>
+        <div class = "desk">
+            <img class="hamburger" src="hamburger.png">
+            <img class="potato" src="potato.png">
+        </div>
+    </div>
+
+</body>
+</html>

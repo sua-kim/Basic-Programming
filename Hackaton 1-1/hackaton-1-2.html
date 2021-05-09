@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>McDonald</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            position: relative; width: 450px; height: 800px;
+            background: #19692c;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+        .bubble {
+            position: absolute; left: 50px; top:19%;
+            margin: 20px;
+            width:300px;
+            height:180px;
+            background:#ffffff;
+            border-radius: 30px;
+        }
+        .bubble:after {
+            border-top:20px solid #ffffff;
+            border-left: 15px solid transparent;
+            border-right: 0px solid transparent;
+            border-bottom: 0px solid transparent;
+            content:"";
+            position:absolute;
+            top:100%;
+            left:13%;
+        }
+        .person {
+            float: left;
+            position: absolute; left: -52px; bottom: -42px; width: 300px;height:500px;
+        }
+    </style>
+</head>
+<body>
+<div class="page" onclick="location.href=''">
+    <img src="logo.png" style="width:50px;height:50px;margin-top:15%">
+    <div class = "bubble">
+        <p style = "margin-top: 18%;">고객님께서</p>
+        <p>주문하실 햄버거를 골라주세요</p>
+    </div>
+    <img class="person" src="https://kuku-keke.com/wp-content/uploads/2020/12/4256_6.png">
+</div>
+
+</body>
+</html>
