@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>상실의 시대 검색</title>    
+    <link rel="stylesheet" href="../../static/style.css">
+    <style>
+        input.underline {
+            border-bottom: 1px solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+        }
+        button.searchBtn {
+            font-weight: 700;
+            font-size: 12px;
+            color: #ffffff;
+            background-color: #036;
+            border: None;
+            border-radius: 50px;
+            width: 90px;
+        }
+        button.searchBtn:hover {
+            background-color:#369;
+        }
+        .searchComment {
+            font-weight: 700;
+            font-size: 20px;
+            color: black;
+        }
+        .searchDetail {
+            font-weight: 500;
+            font-size: 15px;
+            color: #566270;
+        }   
+    </style>
+</head>
+
+<body>
+
+<div class = "searchComment">검색하고자 하는 주인공 이름을 입력해주세요</div>
+<div class = "searchDetail">주인공 : 나오코, 미도리, 와타나베, 레이코</div>
+<form action = "/search/" method="post">
+    <div style="float:left; margin-right: 10px"><input type = "text" name = "character" class = "underline"></div>
+    <div><button type = "submit" class="searchBtn">검색</button></div>
+</form>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>상실의 시대 검색 결과</title>    
+    <link rel="stylesheet" href="../../static/style.css">
+</head>
+
+<body>
+
+<div> "{{g.character}}"의 검색 결과</div>
+
+<table class="type09">
+    <thead>
+    <tr>
+        <th scope="cols">번호</th>
+        <th scope="cols">검색 결과</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in range(0, len) %}
+    <tr>
+        <th scope="row">{{i}}</th>
+        <td>{{sentence[i]}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+
+</html>
